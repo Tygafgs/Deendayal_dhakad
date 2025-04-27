@@ -49,7 +49,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002645066063')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002645066063')  # Request channel id (make sure bot is admin)
 AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002645066063').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002378370682').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
@@ -138,11 +138,11 @@ EMOJI_MODE = bool(environ.get('EMOJI_MODE', False))  # Emoji status On (True) / 
 # ============================
 # Bot Configuration
 # ============================
-auth_grp = environ.get('-1002538769497')
-AUTH_CHANNEL = int(-1002538769497) if auth_channel and id_pattern.search(auth_channel) else None
+auth_grp = environ.get('-1002645066063')
+AUTH_CHANNEL = int(-1002645066063) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-REQST_CHANNEL = int(-1002538769497) if reqst_channel and id_pattern.search(reqst_channel) else None
-SUPPORT_CHAT_ID = int(-1002538769497) if support_chat_id and id_pattern.search(support_chat_id) else None
+REQST_CHANNEL = int(-1002645066063) if reqst_channel and id_pattern.search(reqst_channel) else None
+SUPPORT_CHAT_ID = int(-1002645066063) if support_chat_id and id_pattern.search(support_chat_id) else None
 LANGUAGES = ["malayalam", "", "tamil", "", "english", "", "hindi", "", "telugu", "", "kannada", "", "gujarati", "", "marathi", "", "punjabi", ""]
 QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160P", ""]
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
