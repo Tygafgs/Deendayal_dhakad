@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Deendayal_search')
 API_ID = int(environ.get('API_ID', '25471015'))
 API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7678627311:AAE8gnPI_hSHezPxG4EFg4VpnKVruU46of8")
 
 # ============================
 # Bot Settings Configuration
@@ -44,12 +44,12 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002474664348'))  # Log channel i
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1002474664348'))  # Bin channel id (make sure bot is admin)
 DEENDAYAL_MOVIE_UPDATE_CHANNEL = int(environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL', '-1002479481836'))  # Notification of those who verify will be sent to your channel
 PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1002474664348'))  # Premium logs channel id
-auth_channel = environ.get('AUTH_CHANNEL', '-1002479481836')  # Channel/Group ID for force sub (make sure bot is admin)
+auth_channel = environ.get('AUTH_CHANNEL', '-1002600085277')  # Channel/Group ID for force sub (make sure bot is admin)
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1002474691060').split()]
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002645066063')  # Support group id (make sure bot is admin)
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002479481836')  # Request channel id (make sure bot is admin)
-AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002479481836').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002645066063').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002600085277')  # Request channel id (make sure bot is admin)
+AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-1002600085277').split()]
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002600085277').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
@@ -93,10 +93,10 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 # ============================
 # Channel & Group Links Configuration
 # ============================
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+FzIPOlrprrhkMDE1')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+FzIPOlrprrhkMDE1')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/+FzIPOlrprrhkMDE1')
-DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+F17Oix7dQf9jZDRl')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+EZbSiNYRRo0wNTI1')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+MPYqWUWHJcY2OTVl')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Juglekirani')
+DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+MPYqWUWHJcY2OTVl')
 OWNERID = int(os.environ.get('OWNERID', '5492204858'))  # Replace with the actual admin ID
 
 # ============================
