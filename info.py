@@ -20,7 +20,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Deendayal_search')
 API_ID = int(environ.get('API_ID', '25471015'))
 API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7678627311:AAE8gnPI_hSHezPxG4EFg4VpnKVruU46of8")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8131485295:AAHiZuXyN8Q-4yusp2p5dBG6KnwBra81oNQ")
 
 # ============================
 # Bot Settings Configuration
@@ -61,8 +61,8 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', 'contact us in the support group 👉
 # ============================
 # MongoDB Configuration
 # ============================
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://littlegirlrocksok:ztHtBEQbv9PYEYZZ@cluster0.poamxgy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://HTriggers:TZCVCTIIUTRGBB@cluster0.cmou7ff.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Boyzyewg:Bz3N5m6hDMNbHh6X@cluster0.efelvs9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://royalspamzz:Bz3N5m6hDMNbHh6X@cluster0.oyvdw8i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Deendayal_files')
 
