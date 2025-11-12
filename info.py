@@ -18,9 +18,9 @@ def is_enabled(value, default):
 # Bot Information Configuration
 # ============================
 SESSION = environ.get('SESSION', 'Deendayal_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '25471015'))
+API_HASH = environ.get('API_HASH', '0ab2955ad5b1a913e220800b5fc5db36')
+BOT_TOKEN = environ.get('BOT_TOKEN', "7678627311:AAEX7lWQnFOL_5AU_fdRSPzXfWWwp0fJ_QU")
 # ============================
 # Bot Settings Configuration
 # ============================
@@ -84,8 +84,8 @@ HOW_TO_VERIFY = environ.get('HOW_TO_VERIFY', 'https://t.me/dreamcinezone')  # Ho
 # Link Shortener Configuration
 # ============================
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'softurl.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'f0dee553cdaf427fa0ecced5a5ca9e97cc202c78')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'arlinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'c0faab1f5c6e9d47a38356b93ccc278fe27f5672')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/tutorialshortlinks/7')  # Tutorial video link for opening shortlink website
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 
